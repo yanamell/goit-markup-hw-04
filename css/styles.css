@@ -414,8 +414,10 @@ background-color: #404BBF;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     display: flex;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
+    fill: #8e8f99;
+    
 }
 
 .customers-block {
@@ -428,19 +430,19 @@ background-color: #404BBF;
 }
 
 .customers-icon {
-    fill: rgba(142, 143, 153, 1);
+
 }
 
-.customers-icon:hover {
+.companies:hover {
     fill: #404BBF;
+    border-color: #404bbf;
 }
 /* FOOTER */
 
 .container-footer {
-    display: flex;
-    gap: 120px;
-    flex-shrink: 0;
     align-items: baseline;
+    display: flex;
+    margin-right: 120px;
 }
 
 .footer-item {
@@ -482,14 +484,16 @@ background-color: #404BBF;
 }
 
 .footer-title{
-    display: flex;
     color:  #FFF;
+    font-weight: 500px;
     font-size: 16px;
-    font-style: normal;
-    line-height: 24px;
-    letter-spacing: 0.32px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
+.footer-socials {
+    margin-left: 120px;
+}
 
 .socials-link {
     width: 40px;
@@ -544,8 +548,6 @@ background-color: #404BBF;
     border: 1px solid  #E7E9FC;
     padding: 12px 24px;
 }
-
-
 
 .text-button:hover{
     background-color: #404BBF;
