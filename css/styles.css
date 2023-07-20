@@ -53,6 +53,7 @@ img {
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
         overflow: hidden;
+        margin-bottom: 8px;
 }
 
 /* HEADER */
@@ -110,6 +111,7 @@ img {
 
 .studio {
     position: relative;
+
 }
 
 .studio::after {
@@ -179,7 +181,7 @@ color: #404bbf;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-size: cover;
     background-blend-mode: overlay;
-    max-width: 1440px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -237,7 +239,6 @@ background-color: #404BBF;
     width: 100%;
     display: flex;
     gap: 24px;
-    margin-top: 8px;
 }
 
 
@@ -370,6 +371,10 @@ background-color: #404BBF;
     background-color: #404BBF;
 }
 
+.socials-team-link:focus {
+    background-color: #404BBF;
+}
+
 
 .title-h {
     color: #2E2F42;
@@ -436,10 +441,14 @@ background-color: #404BBF;
 
 }
 
-.companies:hover {
-    fill: #404BBF;
-    border-color: #404bbf;
+.companies:is(:hover, :focus) .customers-icon {
+    fill: #404BBF;  
 }
+
+.customers-block:is(:hover, :focus) .companies {
+    border-color: #404BBF;
+}
+
 /* FOOTER */
 
 .container-footer {
@@ -513,6 +522,10 @@ background-color: #404BBF;
     background-color: #31D0AA;
 }
 
+.socials-link:focus {
+    background-color: #31D0AA;
+}
+
 .socials-icon-item {
     display: flex;
         gap: 16px;
@@ -538,10 +551,14 @@ background-color: #404BBF;
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 72px;
+    
+}
+
+.btn-item-link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-button{
@@ -582,6 +599,10 @@ background-color: #404BBF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.item-block:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .img-list {
     display: flex;
     flex-wrap: wrap;
@@ -594,7 +615,8 @@ background-color: #404BBF;
     width: calc((100% - 48px) / 3);
     justify-content: center;
     position: relative;
-        overflow: hidden;
+    overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -604,6 +626,10 @@ background-color: #404BBF;
 }
 
 .img-box:hover .cover-text {
+    transform: translateY(0);
+}
+
+.img-box:focus .cover-text {
     transform: translateY(0);
 }
 
@@ -694,10 +720,12 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 
 .modal-btn:hover {
     background-color: #404bbf;
+    border: none;
 }
 
 .modal-btn:focus {
     background-color: #404bbf;
+    border: none;
 }
 
 .modal-fon {
@@ -712,6 +740,10 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 
 .icon-close {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:is(:hover, :focus) .icon-close {
+    fill: #ffffff;
 }
 
 .is-hidden {
