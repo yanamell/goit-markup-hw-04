@@ -444,6 +444,16 @@ background-color: #404BBF;
     
 }
 
+.companies:hover {
+    color: #404bbf;
+    border-color: #404BBF;
+}
+
+.companies:focus .customers-icon {
+    color: #404bbf;
+    border-color: #404BBF;
+}
+
 .customers-block {
     width: 168px;
     height: 88px; 
@@ -457,10 +467,6 @@ background-color: #404BBF;
     fill: currentColor;
 }
 
-.companies:is(:hover, :focus) .customers-icon { 
-    color: #404bbf;
-    border-color: #404BBF;
-}
 
 /* FOOTER */
 
