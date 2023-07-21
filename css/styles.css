@@ -457,8 +457,7 @@ background-color: #404BBF;
     fill: currentColor;
 }
 
-.companies:is(:hover, :focus) .customers-icon {
-    fill: #404BBF; 
+.companies:is(:hover, :focus) .customers-icon { 
     color: #404bbf;
 }
 
