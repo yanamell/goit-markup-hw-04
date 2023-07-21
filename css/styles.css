@@ -449,7 +449,7 @@ background-color: #404BBF;
     border-color: #404BBF;
 }
 
-.companies:focus .customers-icon {
+.companies:focus {
     color: #404bbf;
     border-color: #404BBF;
 }
