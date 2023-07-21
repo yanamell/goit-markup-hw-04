@@ -459,12 +459,9 @@ background-color: #404BBF;
 
 .companies:is(:hover, :focus) .customers-icon { 
     color: #404bbf;
-}
-
-.customers-block:hover .companies,
-.customers-block:focus .companies {
     border-color: #404BBF;
 }
+
 /* FOOTER */
 
 .container-footer {
@@ -646,11 +643,11 @@ background-color: #404BBF;
     overflow: hidden;
 }
 
-.img-box:hover .cover-text {
+.item-block:hover .cover-text {
     transform: translateY(0);
 }
 
-.img-box:focus .cover-text {
+.item-block:focus .cover-text {
     transform: translateY(0);
 }
 
